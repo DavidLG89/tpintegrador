@@ -1,0 +1,104 @@
+## Visual Studio / .NET 8 Windows Forms
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Tt]emp/
+[Tt]empPE/
+*.obj
+*.exe
+*.dll
+*.pdb
+
+# Visual Studio folders
+.vs/
+.vscode/
+.idea/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.rsuser
+*.userprefs
+*.sln.docstates
+
+# Backup & cache
+*.cache
+*.bak
+*.old
+*.orig
+*.tmp
+
+# Test results and coverage
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Publish output
+publish/
+*.publish.xml
+
+# Auto-generated resources
+*.g.*
+*.i.*
+*.Designer.cs
+*.AssemblyInfo.cs
+*.Resource.Designer.cs
+
+# Logs
+*.log
+*.tlog
+*.svclog
+*.vshost.*
+
+# Database / config files
+*.dbmdl
+*.mdf
+*.ldf
+*.db
+*.sqlite
+*.db3
+*.sdf
+
+# Environment
+.env
+.env.*
+
+# OS files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ReSharper / JetBrains Rider
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+# Crash dumps
+*.stackdump
+*.dmp
+
+# Local files
+*.local.json
+*.user.config
+
+# Windows Forms auto-generated resources
+*.resx
+*.resources
+
+# Build metadata
+*.tlog
+*.lastbuildstate
