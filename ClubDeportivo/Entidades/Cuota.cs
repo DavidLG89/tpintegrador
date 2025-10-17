@@ -8,7 +8,7 @@ namespace ClubDeportivo.Entities
 {
     public class Cuota
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
         public decimal Monto { get; set; }
         public DateTime FechaVencimiento { get; set; }
         public bool EstaPago { get; set; }

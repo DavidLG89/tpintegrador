@@ -7,22 +7,35 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ClubDeportivo.Entities
 {
-    public class Cliente: Person
+    public class Cliente
     {
         public int Id { get; set; }
-        public DateTime RegistrationDate { get; set; } = DateTime.Now.Date;
-        public bool IsActive { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Dni { get; set; }
+        public string Direccion { get; set; }
+        public string Telefono { get; set; }
+        public string CorreoElectronico { get; set; }
+        public DateTime FechaRegistro { get; set; } = DateTime.Now.Date;
+        public bool EstaActivo { get; set; }
 
         // Constructor
-        public Cliente(string name, string surname, string dni, string address, string phone, string email, DateTime registrationDate, bool isActive)
-            : base(name, surname, dni, address, phone, email)
+        public Cliente(string nombre, string apellido, string dni, string direccion, string telefono,
+            string correoElectronico, DateTime fechaRegistro, bool estaActivo)
         {
-            RegistrationDate = registrationDate;
-            IsActive = isActive;
+            Nombre = nombre;
+            Apellido = apellido;
+            Dni = dni;
+            Direccion = direccion;
+            Telefono = telefono;
+            CorreoElectronico = correoElectronico;
+            FechaRegistro = fechaRegistro;
+            EstaActivo = estaActivo;
         }
+
         public override string ToString()
         {
-            return $"{Name} {Surname} (DNI: {Dni}) - Activo: {IsActive}";
+            return $"{Nombre} {Apellido} - DNI: {Dni} - Activo: {EstaActivo}";
         }
     }
 }

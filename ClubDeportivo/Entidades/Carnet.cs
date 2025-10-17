@@ -8,17 +8,16 @@ namespace ClubDeportivo.Entities
 {
     public class Carnet
     {
-        public int Id { get; set; }
-        public string NumeroCarnet { get; set; }
+        public long Id { get; set; }
         public DateTime FechaCreacion { get; set; } = DateTime.Now.Date;
         public DateTime FechaExpiracion { get; set; }
         public Cliente Cliente { get; set; }
         public RolCliente RolCliente { get; set; }
 
         // Constructor
-        public Carnet(string numeroCarnet, DateTime fechaCreacion, DateTime fechaExpiracion, Cliente cliente, RolCliente rolCliente)
+        public Carnet(long id, DateTime fechaCreacion, DateTime fechaExpiracion, Cliente cliente, RolCliente rolCliente)
         {
-            NumeroCarnet = numeroCarnet;
+            Id = id;
             FechaCreacion = fechaCreacion;
             FechaExpiracion = fechaExpiracion;
             Cliente = cliente;
@@ -27,7 +26,8 @@ namespace ClubDeportivo.Entities
 
         public override string ToString()
         {
-            return $"Client name: {Cliente.Nombre} - Card {NumeroCarnet} - Issued: {FechaCreacion.ToShortDateString()} - Expires: {FechaExpiracion.ToShortDateString()} - ClientRole: {RolCliente.Nombre}";
+            return $"Nombre cliente: {Cliente.Nombre} - Carnet nro {Id} - Creado: {FechaCreacion.ToShortDateString()} " +
+                $"- Expira: {FechaExpiracion.ToShortDateString()} - Rol: {RolCliente.ToString()}";
         }
 
         // Método de utilidad: verificar si la tarjeta está vigente
