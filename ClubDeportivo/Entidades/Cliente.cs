@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace ClubDeportivo.Entities
+namespace ClubDeportivo.Entidades
 {
     public class Cliente
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Dni { get; set; }
@@ -17,12 +17,14 @@ namespace ClubDeportivo.Entities
         public string Telefono { get; set; }
         public string CorreoElectronico { get; set; }
         public DateTime FechaRegistro { get; set; } = DateTime.Now.Date;
-        public bool EstaActivo { get; set; }
+        public bool EsApto { get; set; }
+        public bool EstaActivo { get; set; } = true;
 
         // Constructor
-        public Cliente(string nombre, string apellido, string dni, string direccion, string telefono,
-            string correoElectronico, DateTime fechaRegistro, bool estaActivo)
+        public Cliente(long id, string nombre, string apellido, string dni, string direccion, string telefono,
+            string correoElectronico, DateTime fechaRegistro,bool esApto)
         {
+            Id = id;
             Nombre = nombre;
             Apellido = apellido;
             Dni = dni;
@@ -30,6 +32,21 @@ namespace ClubDeportivo.Entities
             Telefono = telefono;
             CorreoElectronico = correoElectronico;
             FechaRegistro = fechaRegistro;
+            EsApto = esApto;
+        }
+        // Constructor con todos los atributos
+        public Cliente(long id, string nombre, string apellido, string dni, string direccion, string telefono,
+            string correoElectronico, DateTime fechaRegistro, bool esApto, bool estaActivo)
+        {
+            Id = id;
+            Nombre = nombre;
+            Apellido = apellido;
+            Dni = dni;
+            Direccion = direccion;
+            Telefono = telefono;
+            CorreoElectronico = correoElectronico;
+            FechaRegistro = fechaRegistro;
+            EsApto = esApto;
             EstaActivo = estaActivo;
         }
 

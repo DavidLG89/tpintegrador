@@ -1,4 +1,4 @@
-﻿namespace ClubDeportivo.Entities
+﻿namespace ClubDeportivo.Entidades
 {
     public class Actividad
     {

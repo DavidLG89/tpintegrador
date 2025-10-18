@@ -16,5 +16,17 @@ namespace ClubDeportivo.Forms
         {
             InitializeComponent();
         }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            // Crear una nueva instancia del formulario Clientes
+            Clientes Clientes = new Clientes();
+
+            // Mostrar el formulario de Clientes
+            Clientes.Show();
+
+            // Esconder el formulario actual (Inicio)
+            this.Close();
+        }
     }
 }

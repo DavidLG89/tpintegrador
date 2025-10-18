@@ -21,5 +21,19 @@ namespace ClubDeportivo.Forms
         {
 
         }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            Inicio inicio = new Inicio();
+            inicio.Show();
+            this.Close();
+        }
+
+        private void btnAgregarCliente_Click(object sender, EventArgs e)
+        {
+            AgregarCliente agregarCliente = new AgregarCliente();
+            agregarCliente.Show();
+            this.Close();
+        }
     }
 }

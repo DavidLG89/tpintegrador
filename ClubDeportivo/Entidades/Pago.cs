@@ -1,6 +1,6 @@
 ﻿using ClubDeportivo.Entidades;
 
-namespace ClubDeportivo.Entities
+namespace ClubDeportivo.Entidades
 {
     public class Pago
     {

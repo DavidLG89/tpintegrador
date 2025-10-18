@@ -9,9 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Datos\" />
 	<Folder Include="LogicaDeNegocio\" />
     <Folder Include="Recursos\" />
+	<Folder Include="Entidades\" />
+	<Folder Include="Forms\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,7 +20,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+    <PackageReference Include="MySql.Data" Version="9.4.0" />
   </ItemGroup>
 
   <ItemGroup>
